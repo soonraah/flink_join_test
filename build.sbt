@@ -8,8 +8,9 @@ ThisBuild / organizationName := "example"
 lazy val root = (project in file("."))
   .settings(
     name := "flink-join-test",
-    // libraryDependencies += scalaTest % Test
     libraryDependencies ++= Seq(
+      "org.apache.flink" %% "flink-table-api-scala-bridge" % "1.11.1",
+      "org.apache.flink" %% "flink-table-planner-blink" % "1.11.1",
       "org.apache.flink" %% "flink-streaming-scala" % "1.11.1",
       "org.apache.flink" %% "flink-test-utils" % "1.11.1",
       scalaTest % Test

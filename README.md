@@ -8,6 +8,16 @@ A test project for join operation by Apache Flink.
 
 ## Run
 
+For the join test by DataStream API.
+(blog post: [Apache Flink の Broadcast State Pattern を用いた stream data と static data の join](https://soonraah.github.io/flink-join-by-broadcast-state-pattern/))
+
 ```
-sbt run
+sbt 'runMain example.FlinkJoinTest'
+```
+
+For the join test by Table API.
+(blog post: [Apache Flink の Temporary Table Function を用いた stream data と static data の join](https://soonraah.github.io/flink-join-by-temporal-table-function/))
+
+```
+sbt 'runMain example.FlinkTableJoinTest'
 ```
